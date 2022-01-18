@@ -1,0 +1,153 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(32, 33, 36);
+  font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+  color: rgba(211, 211, 211, 0.884);
+  font-size: 17px;
+}
+
+.x {
+  width: 100%;
+}
+
+/** TELA DE LOGIN **/
+
+.form-login-login {
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-usuario-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div-senha-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div-senha-validacao-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div-login-login {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div-buttons-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-usuario-login {
+}
+
+.label-senha-login {
+}
+
+.input-usuario-login {
+  align-items: center;
+  width: 100%;
+  border-style: unset;
+  background-color: rgba(211, 211, 211, 0.884);
+  border-radius: 3px;
+  height: 22px;
+  font-size: 16px;
+}
+
+.input-senha-login {
+  width: 100%;
+  border-style: unset;
+  background-color: rgba(211, 211, 211, 0.884);
+  border-radius: 3px;
+  height: 22px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input-obrigatorio-marcado {
+  border-color: red;
+}
+
+.button-login-login {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: small;
+  border-style: unset;
+  color: rgba(143, 171, 209, 0.884);
+  font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+}
+
+.button-register-login {
+  cursor: pointer;
+  margin-bottom: 5%;
+  align-self: center;
+  width: 70%;
+  font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+  font-size: large;
+  border-style: unset;
+  border-radius: 3px;
+  background-color: #4a4a4a;
+  color: rgba(211, 211, 211, 0.884);
+}
+
+.button-entrar-login {
+  cursor: pointer;
+  justify-self: flex-end;
+  width: 100%;
+  font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+  font-size: large;
+  border-style: unset;
+  border-radius: 3px;
+  background-color: #4a4a4a;
+  color: rgba(211, 211, 211, 0.884);
+}
+
+.button-voltar-login {
+  cursor: pointer;
+  margin-right: 10%;
+  width: 100%;
+  font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif;
+  font-size: large;
+  border-style: unset;
+  border-radius: 3px;
+  background-color: #4a4a4a;
+  color: rgba(211, 211, 211, 0.884);
+}
+
+.aviso {
+  color: rgb(255, 137, 137);
+}
+
+.descricao {
+  font-size: larger;
+}
+.preco {
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}

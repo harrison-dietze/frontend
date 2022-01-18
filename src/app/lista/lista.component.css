@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  height: 1%;
+  margin: 5%;
+}
+.lista {
+  height: 60%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  height: 20em;
+  margin-top: 15% !important;
+  margin: 5%;
+  border: solid 2px;
+  border-color: aliceblue;
+}
+.imagem-item {
+  margin: 10%;
+}
+.dados {
+  min-width: 15em;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

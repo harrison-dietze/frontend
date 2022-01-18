@@ -1,0 +1,32 @@
+<div>
+  <img
+    (click)="tratarMenu()"
+    class="icon-menu"
+    width="7%"
+    src="https://www.pinclipart.com/picdir/big/181-1812493_menu-white-menu-button-png-clipart.png"
+  />
+  <form [formGroup]="pesquisaForm" (ngSubmit)="onPesquisar()">
+    <input formControlName="pesquisa" />
+    <button class="search" type="submit">
+      <img
+        width="80%"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Search_icon.svg/480px-Search_icon.svg.png"
+      />
+    </button>
+  </form>
+  <img
+    *ngIf="carrinho"
+    (click)="botaoCarrinho()"
+    class="carrinho-icon"
+    width="9%"
+    src="https://www.promocaooficinadossonhos.com.br/assets/images/icons/shopping-cart-bosch-white.png"
+  />
+  <div class="menu" *ngIf="menuVisivel">
+    <ul>
+      <li>Itens mais vendidos</li>
+      <li>Categorias</li>
+      <li *ngIf="isAdmin">Cadastro de Produtos</li>
+      <li (click)="logOut()">Sair</li>
+    </ul>
+  </div>
+</div>

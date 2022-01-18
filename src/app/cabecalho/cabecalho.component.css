@@ -1,0 +1,64 @@
+.icon-menu {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  z-index: 9999;
+}
+.menu {
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  left: 1%;
+}
+
+.search {
+  cursor: pointer;
+  border-radius: 10px;
+  position: fixed;
+  top: 1%;
+  right: 20%;
+  width: 7%;
+  height: 4.5%;
+}
+
+.carrinho-icon {
+  cursor: pointer;
+  position: fixed;
+  top: -0.5%;
+  right: 1%;
+}
+
+ul {
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.192);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 10px;
+  min-width: 100%;
+  margin-right: 10%;
+  margin-top: 10%;
+  padding: 5%;
+  background-color: rgb(32, 33, 36);
+}
+
+li:hover {
+  border: solid 1px;
+  border-color: black;
+  color: black;
+  background-color: aliceblue;
+}
+
+input {
+  border-radius: 10px;
+  outline: none;
+  height: 3.5%;
+  width: 50%;
+  position: fixed;
+  left: 20%;
+}

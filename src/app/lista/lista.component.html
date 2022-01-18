@@ -1,0 +1,22 @@
+<div class="lista">
+  <div class="item">
+    <div *ngFor="let item of itens" class="card">
+      <img
+        src="{{ item.imagem }}"
+        width="80%"
+        height="80%"
+        class="imagem-item"
+      />
+      <div class="dados">
+        <ul>
+          <li class="descricao">{{ item.titulo }}</li>
+          <li class="preco">{{ item.descricao }}</li>
+          <li>Quantidade: {{ item.quantidade }}</li>
+          <li class="preco">
+            R$ {{ (item.preco * item.quantidade).toFixed(2) }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

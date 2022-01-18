@@ -1,0 +1,71 @@
+<form
+  class="form-login-login"
+  [formGroup]="loginForm"
+  (ngSubmit)="onLogin(isCriacao)"
+>
+  <div class="login">
+    <div class="div-usuario-login">
+      <div>
+        <label class="label-usuario-login" for="usuario">Usuário: </label>
+        <span class="aviso" *ngIf="naoPreenchidos.nome">*</span>
+      </div>
+      <input
+        class="input-usuario-login"
+        id="usuario"
+        type="text"
+        formControlName="nome"
+      />
+    </div>
+    <div class="div-senha-login">
+      <div>
+        <label class="label-senha-login" for="senha">Senha: </label>
+        <span class="aviso" *ngIf="naoPreenchidos.senha">*</span>
+      </div>
+      <input
+        class="input-senha-login"
+        id="senha"
+        type="password"
+        formControlName="senha"
+      />
+    </div>
+    <br />
+    <div class="div-senha-validacao-login" *ngIf="isCriacao">
+      <label for="senha">Repita a senha: </label>
+      <input
+        [formControl]="senhaValidacao"
+        class="input-senha-login"
+        id="senhaValidacao"
+        type="password"
+      />
+    </div>
+    <span class="aviso" *ngIf="!isSenhasIguais"
+      >As senhas precisam ser iguais.</span
+    >
+    <span class="aviso" *ngIf="isSenhasIguais"><br /></span>
+    <div class="div-login-login" *ngIf="isCriacao">
+      <button class="button-register-login" type="submit" *ngIf="isCriacao">
+        Registrar
+      </button>
+      <div>
+        <span>Já possui usuário?</span>
+        <button
+          class="button-login-login"
+          type="button"
+          (click)="isCriacao = false"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+    <div class="div-buttons-login" *ngIf="!isCriacao">
+      <button
+        class="button-voltar-login"
+        type="button"
+        (click)="isCriacao = true"
+      >
+        Voltar
+      </button>
+      <button class="button-entrar-login" type="submit">Entrar</button>
+    </div>
+  </div>
+</form>

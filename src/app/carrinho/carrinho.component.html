@@ -1,0 +1,26 @@
+<app-cabecalho [carrinho]="carrinhoIconVisivel"></app-cabecalho>
+<div class="carrinho">
+  <app-lista [itens]="carrinho"></app-lista>
+</div>
+<form [formGroup]="enderecoForm">
+  <div class="endereco">
+    <label for="estadoSelect">Estado:</label>
+    <select id="estadoSelect" formControlName="estado">
+      <option value="">Selecione...</option>
+      <option *ngFor="let estado of estados" value="{{ estado.valor }} ">
+        {{ estado.sigla }}
+      </option>
+    </select>
+  </div>
+  <div class="endereco">
+    <label for="cidadeSelect">Cidade:</label>
+    <select id="cidadeSelect" formControlName="cidade">
+      <option value="">Selecione...</option>
+      <option *ngFor="let cidade of cidades" value="{{ cidade }} ">
+        {{ cidade }}
+      </option>
+      >
+    </select>
+  </div>
+</form>
+<div class="dados-compra">Total: R$ {{ totalString }}</div>
